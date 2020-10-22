@@ -1,0 +1,19 @@
+{
+  "ocspResponder": {
+    "source": "file:///tmp/intermediate-ocsp-sm2.b64",
+    "path": "/",
+    "listenAddress": "0.0.0.0:4003",
+    "shutdownStopTimeout": "10s",
+    "shutdownKillTimeout": "1m",
+    "debugAddr": "localhost:8010"
+  },
+  "common": {
+    "issuerCert": "/tmp/intermediate-cert-sm2-a.pem"
+  },
+  "sql": {
+    "sqlDebug": true
+  },
+  "syslog": {
+    "stdoutlevel": 6
+  }
+}

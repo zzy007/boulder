@@ -1,0 +1,22 @@
+{
+  "ocspResponder": {
+    "dbConnectFile": "test/secrets/ocsp_responder_dburl",
+    "maxDBConns": 10,
+    "path": "/",
+    "listenAddress": "0.0.0.0:4002",
+    "maxAge": "10s",
+    "timeout": "4.9s",
+    "shutdownStopTimeout": "10s",
+    "debugAddr": ":8005",
+    "requiredSerialPrefixes": ["ff"]
+  },
+
+  "syslog": {
+   "stdoutlevel": 6,
+   "sysloglevel": 6
+ },
+
+  "common": {
+    "issuerCert": "/tmp/intermediate-cert-sm2-a.pem"
+  }
+}

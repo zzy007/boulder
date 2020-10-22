@@ -1,0 +1,32 @@
+{
+  "publisher": {
+    "userAgent": "boulder/1.0",
+    "blockProfileRate": 1000000000,
+    "debugAddr": ":8009",
+    "grpc": {
+      "address": ":9091",
+      "clientNames": [
+        "ra.boulder",
+        "ocsp-updater.boulder"
+      ]
+    },
+    "tls": {
+      "caCertFile": "test/grpc-creds/minica.pem",
+      "certFile": "test/grpc-creds/publisher.boulder/cert.pem",
+      "keyFile": "test/grpc-creds/publisher.boulder/key.pem"
+    },
+    "features": {
+    }
+  },
+
+  "syslog": {
+    "stdoutlevel": 6,
+    "sysloglevel": 6
+  },
+
+  "common": {
+    "ct": {
+      "intermediateBundleFilename": "/tmp/intermediate-cert-sm2-a.pem"
+    }
+  }
+}
